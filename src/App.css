@@ -3,6 +3,11 @@ body{
   background-size: contain;
 }
 
+header img{
+  display: block;
+  margin: 0 auto;
+}
+
 .container{
   text-align: center;
 }
@@ -16,6 +21,8 @@ ul{
   height: 150px;
   aspect-ratio: 1/1;
   border-radius: 20px;
+  margin: 0 auto;
   margin: 0.5em;
   object-fit: cover;
+  
 }
