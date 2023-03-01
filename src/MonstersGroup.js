@@ -27,7 +27,6 @@ export default function MonstersGroup() {
     }
     return(
         <Container>
-            <h1 className="text-center mb-3"> BOTW: Bestiary of Hyrule</h1 >
             <input name="filtre" type="text" value={filter} onChange={handleFilterChange} />
             <ul >
                 {filtered.map(x => <img key={x.id} src={x.img_url}></img>)}
