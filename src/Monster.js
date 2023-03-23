@@ -6,7 +6,7 @@ import "./Monster.css";
 export default function Monster(props) {
     return (
         <Container className="carte">
-            <Card style={{ width: '50vw', minWidth:'1024px'}}>
+            <Card style={{width: '50vw', minWidth:'1024px'}}>
                 <Card.Img variant="top" src={props.img_url} />
                 <Card.Body>
                     <Card.Title>{props.name}</Card.Title>
