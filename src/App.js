@@ -8,6 +8,8 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [results, setResults] = useState([]);
+  let tablette = document.getElementById('tablet')
+  let menu = document.getElementById('InTablet')
 
   async function getMonsters() {
     try {
@@ -23,33 +25,32 @@ function App() {
     })();
   }, []);
 
-  function menu(){
-    let tablette = document.getElementById('tablet')
-    let menu = document.getElementById('InTablet')
+  function openmenu(){
     tablette.classList.add("ouvert")
     menu.classList.add("menu-open")
+  }
+
+  function closemenu(){
+    tablette.classList.remove("ouvert")
+    menu.classList.remove('menu-open')
   }
 
   return (
     <>
       <header>
         <div>
-        <Link to="/"><img src="../img/title.png"></img></Link>
+        <Link to="/" onClick={closemenu}><img src="../img/title.png"></img></Link>
         </div>
-        <nav>          
-          <Link to="/MonsterGroup/">Liste des monstres</Link>
-          <a>Carte interactive</a>
-          <a>Filtrer</a>
-          <a>Ajouter</a>
-        </nav>
+
       </header>
       <div className='tablet'>
-        <img id="tablet" src="../img/Tablette.webp" onClick={menu}/>
+        <img id="tablet" src="../img/Tablette.webp" onClick={openmenu}/>
         <div id='InTablet'>
-          <a>Carte interactive</a>
-          <a>Filtrer</a>
-          <a>Ajouter</a>
-          </div>
+          <div><Link to="/MonsterGroup/" onClick={closemenu}><img src="../img/list-ul-regular-96.png"/><p>Liste des monstres</p></Link></div>
+          <div><Link to="/" onClick={closemenu}><img src="../img/map-alt-regular-96.png"/><p>Carte interactive</p></Link></div>
+          <div><Link to="/" onClick={closemenu}><img src="../img/purchase-tag-solid-96.png"/><p>Filtrer</p></Link></div>
+          <div><Link to="/" onClick={closemenu}><img src="../img/add-to-queue-solid-96.png"/><p>Ajouter</p></Link></div>
+        </div>
       </div>
 
       <Routes>

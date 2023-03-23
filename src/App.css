@@ -3,6 +3,7 @@ body{
   background-image: url(../public/img/background.png);
   backdrop-filter: blur(5px);
   background-size: cover;
+  font-family: Raleway;
 }
 
 #root{
@@ -30,16 +31,38 @@ header img{
 }
 
 .menu-open{
-  display: block !important;
+  display: flex !important;
 }
 
 #InTablet{
   display: none;
   background-image: url('../public/img/tablet-background.png');
-  background-size: cover;
+  background-size:cover;
   border-radius: 10px;
   width: 50%;
   height: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+#InTablet div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#InTablet div img{
+  width: 96px;
+  margin: 0 auto;
+}
+
+#InTablet a{
+  text-decoration: none;
+  width: 100px;
+  color: white;
+  margin: 1em;
+  text-align: center;
 }
 
 .tablet{
@@ -50,7 +73,7 @@ header img{
   
 }
 
-.tablet img{
+.tablet > img{
   width: 10%;
 }
 
@@ -59,10 +82,10 @@ nav{
   flex-direction: column;
 }
 
-nav a{
+nav a, #InTablet{
   text-decoration: none;
   font-size: large;
-  margin: 0.5em;
+  margin: 0.3em;
   color: white;
   font-weight: bold;
 }
