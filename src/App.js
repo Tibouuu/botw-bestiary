@@ -23,6 +23,13 @@ function App() {
     })();
   }, []);
 
+  function menu(){
+    let tablette = document.getElementById('tablet')
+    let menu = document.getElementById('InTablet')
+    tablette.classList.add("ouvert")
+    menu.classList.add("menu-open")
+  }
+
   return (
     <>
       <header>
@@ -33,10 +40,16 @@ function App() {
           <Link to="/MonsterGroup/">Liste des monstres</Link>
           <a>Carte interactive</a>
           <a>Filtrer</a>
+          <a>Ajouter</a>
         </nav>
       </header>
       <div className='tablet'>
-        <img src="../img/Tablette.webp"/>
+        <img id="tablet" src="../img/Tablette.webp" onClick={menu}/>
+        <div id='InTablet'>
+          <a>Carte interactive</a>
+          <a>Filtrer</a>
+          <a>Ajouter</a>
+          </div>
       </div>
 
       <Routes>
