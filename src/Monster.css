@@ -7,6 +7,19 @@
 
 .card-img-top{
     float: left;
-    width: 30% !important;
-    height: auto !important;
+    width: auto !important;
+    height: 100% !important;
+}
+
+.card-title{
+    font-size: 3em;
+}
+
+.card-subtitle{
+    font-size: 2em;
+}
+
+.desc{
+    width: 100%;
+    min-height: 145px;
 }
