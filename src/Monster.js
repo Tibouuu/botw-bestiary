@@ -1,11 +1,11 @@
 import { Card } from "react-bootstrap";
 import { useState } from "react";
-import { Container } from "react-bootstrap"
-import "./Monster.css"
+import { Container } from "react-bootstrap";
+import "./Monster.css";
 
 export default function Monster(props) {
     return (
-        <Container>
+        <Container className="carte">
             <Card style={{ width: '90vw' }}>
                 <Card.Img variant="top" src={props.img_url} />
                 <Card.Body>
@@ -18,5 +18,6 @@ export default function Monster(props) {
                     <Card.Text>{props.loot}</Card.Text>
                 </Card.Body>
             </Card>
+        </Container>
     );
 }
