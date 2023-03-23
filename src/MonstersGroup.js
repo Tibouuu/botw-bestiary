@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Monster from "./Monster";
 import { Container } from "react-bootstrap"
+import "./MonsterGroup.css";
 import { Route, Link, Routes } from "react-router-dom";
 
 export default function MonstersGroup() {
@@ -28,8 +29,8 @@ export default function MonstersGroup() {
     }
     return (
         <Container>
-            <input name="filtre" type="text" value={filter} onChange={handleFilterChange} />
-            <ul >
+            <input name="filtre" type="text" value={filter} placeholder="Rechercher un monstre..." onChange={handleFilterChange} />
+            <ul>
                 {filtered.map(x => <>
                     <Routes>
                         <Route exact={true} path={"/Monster/" + x.id} element={<Monster key={x.id} {...x}/>} />
@@ -37,7 +38,7 @@ export default function MonstersGroup() {
                     <Link to={"/Monster/" + x.id}><img key={x.name} {...x} src={x.img_url}></img></Link>
                 </>
                 )}
-            </ul >
+            </ul>
         </Container>
     )
 }

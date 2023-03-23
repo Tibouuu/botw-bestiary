@@ -2,10 +2,9 @@ import { Card } from "react-bootstrap";
 import { useState } from "react";
 import { Container } from "react-bootstrap"
 
+
 export default function Monster(props) {
     return (
-        <Container>
-            <p>Coucou</p>
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={props.img_url} />
                 <Card.Body>
@@ -14,6 +13,5 @@ export default function Monster(props) {
                     <Card.Text>{props.description}</Card.Text>
                 </Card.Body>
             </Card>
-        </Container>
     );
 }

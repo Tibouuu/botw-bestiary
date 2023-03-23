@@ -1,0 +1,8 @@
+.container input{
+    width: 30%;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    text-align: center;
+    font-size: large;
+}
