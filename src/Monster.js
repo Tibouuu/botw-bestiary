@@ -1,17 +1,23 @@
 import { Card } from "react-bootstrap";
 import { useState } from "react";
-import { Container } from "react-bootstrap"
-
+import { Container } from "react-bootstrap";
+import "./Monster.css";
 
 export default function Monster(props) {
     return (
-            <Card style={{ width: '18rem' }}>
+        <Container className="carte">
+            <Card style={{ width: '50vw', minWidth:'1024px'}}>
                 <Card.Img variant="top" src={props.img_url} />
                 <Card.Body>
                     <Card.Title>{props.name}</Card.Title>
-                    <Card.Subtitle>{props.species}, {props.type}, {props.color}</Card.Subtitle>
-                    <Card.Text>{props.description}</Card.Text>
+                    <Card.Subtitle>description</Card.Subtitle>
+                    <Card.Text className="desc">{props.description}</Card.Text>
+                    <Card.Subtitle>biome</Card.Subtitle>
+                    <Card.Text>{props.biome}</Card.Text>
+                    <Card.Subtitle>Matériaux récupérables</Card.Subtitle>
+                    <Card.Text>{props.loots}</Card.Text>
                 </Card.Body>
             </Card>
+        </Container>
     );
 }
