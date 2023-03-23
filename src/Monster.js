@@ -15,7 +15,7 @@ export default function Monster(props) {
                     <Card.Subtitle>biome</Card.Subtitle>
                     <Card.Text>{props.biome}</Card.Text>
                     <Card.Subtitle>Matériaux récupérables</Card.Subtitle>
-                    <Card.Text>{props.loot}</Card.Text>
+                    <Card.Text>{props.loots}</Card.Text>
                 </Card.Body>
             </Card>
         </Container>

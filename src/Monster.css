@@ -3,6 +3,8 @@
     border-radius: 2rem;
     margin:auto;
     padding:2em;
+    font-family: Raleway;
+    height: fit-content;
 }
 
 .card-img-top{
@@ -13,13 +15,16 @@
 
 .card-title{
     font-size: 3em;
+    font-variant: small-caps;
+    font-weight: 500;
 }
 
 .card-subtitle{
     font-size: 2em;
+    font-variant: small-caps;
 }
 
 .desc{
     width: 100%;
-    min-height: 145px;
+    height:100%
 }
