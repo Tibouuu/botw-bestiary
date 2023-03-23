@@ -1,3 +1,12 @@
 .card{
     background-color:white;
+    border-radius: 2rem;
+    margin:auto;
+    padding:2em;
+}
+
+.card-img-top{
+    float: left;
+    width: 30% !important;
+    height: auto !important;
 }
