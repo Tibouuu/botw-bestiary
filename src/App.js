@@ -26,10 +26,19 @@ function App() {
   return (
     <>
       <header>
-        <img src="../title.png"></img>
-        <h1>Bienvenue au royaume d'Hyrule.</h1>
+        <div>
+        <Link to="/"><img src="../img/title.png"></img></Link>
+        </div>
+        <nav>          
+          <Link to="/MonsterGroup/">Liste des monstres</Link>
+          <a>Carte interactive</a>
+          <a>Filtrer</a>
+        </nav>
       </header>
-      <Link to="/MonsterGroup/">Liste des monstres</Link>
+      <div className='tablet'>
+        <img src="../img/Tablette.webp"/>
+      </div>
+
       <Routes>
         <Route exact={true} path="/MonsterGroup/*" element={<MonstersGroup />}></Route>
         {results.map(x => <Route exact={true} path={"/Monster/" + x.id} element={<Monster key={x.id} {...x} />}></Route>)}

@@ -28,7 +28,7 @@ export default function MonstersGroup() {
         setFilter(e.target.value)
     }
     return (
-        <Container>
+        <Container className="listmonster">
             <input name="filtre" type="text" value={filter} placeholder="Rechercher un monstre..." onChange={handleFilterChange} />
             <ul>
                 {filtered.map(x => <>

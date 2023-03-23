@@ -1,11 +1,52 @@
 body{
-  background-image: url(../public/background.jpg);
+  background-image: url(../public/img/background.png);
+  backdrop-filter: blur(5px);
   background-size: cover;
+  display
+}
+
+#root{
+  height: 100vh;
+  border: 1px solid red;
+}
+
+header{
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  background-color: rgba(85, 79, 76, 0.3);
+  backdrop-filter: blur(10px);
+  justify-content: space-around;
 }
 
 header img{
   display: block;
   margin: 0 auto;
+}
+
+.tablet{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 2;
+  
+}
+
+.tablet img{
+  width: 10%;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+}
+
+nav a{
+  text-decoration: none;
+  font-size: large;
+  margin: 0.5em;
+  color: white;
+  font-weight: bold;
 }
 
 .container{
@@ -16,7 +57,7 @@ ul{
   padding: 0;
 }
 
-.container img{
+.listmonster img{
   width: 150px;
   height: 150px;
   aspect-ratio: 1/1;
