@@ -18,6 +18,5 @@ export default function Monster(props) {
                     <Card.Text>{props.loot}</Card.Text>
                 </Card.Body>
             </Card>
-        </Container>
     );
 }

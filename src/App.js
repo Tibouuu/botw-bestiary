@@ -29,11 +29,12 @@ function App() {
         <img src="../title.png"></img>
         <h1>Bienvenue au royaume d'Hyrule.</h1>
       </header>
+      <Link to="/MonsterGroup/">Liste des monstres</Link>
       <Routes>
         <Route exact={true} path="/MonsterGroup/*" element={<MonstersGroup />}></Route>
         {results.map(x => <Route exact={true} path={"/Monster/" + x.id} element={<Monster key={x.id} {...x} />}></Route>)}
       </Routes>
-      <Link to="/MonsterGroup/">Liste des monstres</Link>
+
     </>
   );
 }
