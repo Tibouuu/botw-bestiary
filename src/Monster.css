@@ -1,6 +1,6 @@
 .card{
     background-color:rgba(255, 255, 255, 0.151);
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(20px);
     border-radius: 2rem;
     margin:auto;
     padding:2em;
@@ -15,7 +15,8 @@
 .card-img-top{
     float: left;
     border-radius: 20px;
-    height: 110%;
+    height: 280px;
+    aspect-ratio: 1/1;
     box-shadow:  2px 1px 24px -6px rgba(0, 0, 0, 0.5);
 }
 
