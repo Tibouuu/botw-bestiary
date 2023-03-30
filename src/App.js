@@ -25,12 +25,12 @@ function App() {
     })();
   }, []);
 
-  function openmenu(){
+  function openmenu() {
     tablette.classList.add("ouvert")
     menu.classList.add("menu-open")
   }
 
-  function closemenu(){
+  function closemenu() {
     tablette.classList.remove("ouvert")
     menu.classList.remove('menu-open')
   }
@@ -39,17 +39,20 @@ function App() {
     <>
       <header>
         <div>
-        <Link to="/" onClick={closemenu}><img src="../img/title.png"></img></Link>
+          <Link to="/" onClick={closemenu}><img src="../img/title.png"></img></Link>
         </div>
 
       </header>
       <div className='tablet'>
-        <img id="tablet" src="../img/Tablette.webp" onClick={openmenu}/>
+        <img id="tablet" src="../img/Tablette.webp" onClick={openmenu} />
         <div id='InTablet'>
-          <div><Link to="/MonsterGroup/" onClick={closemenu}><img src="../img/list-ul-regular-96.png"/><p>Liste des monstres</p></Link></div>
-          <div><Link to="/" onClick={closemenu}><img src="../img/map-alt-regular-96.png"/><p>Carte interactive</p></Link></div>
-          <div><Link to="/" onClick={closemenu}><img src="../img/purchase-tag-solid-96.png"/><p>Filtrer</p></Link></div>
-          <div><Link to="/" onClick={closemenu}><img src="../img/add-to-queue-solid-96.png"/><p>Ajouter</p></Link></div>
+          <p onClick={closemenu}>Fermer</p>
+          <div className='mode'>
+            <div><Link to="/MonsterGroup/" onClick={closemenu}><img src="../img/list-ul-regular-96.png" /><p>Liste des monstres</p></Link></div>
+            <div><Link to="/" onClick={closemenu}><img src="../img/map-alt-regular-96.png" /><p>Carte interactive</p></Link></div>
+            <div><Link to="/" onClick={closemenu}><img src="../img/purchase-tag-solid-96.png" /><p>Filtrer</p></Link></div>
+            <div><Link to="/" onClick={closemenu}><img src="../img/add-to-queue-solid-96.png" /><p>Ajouter</p></Link></div>
+          </div>
         </div>
       </div>
 
