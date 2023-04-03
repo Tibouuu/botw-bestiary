@@ -4,6 +4,13 @@
 
 #tablet-menu{
     width: 50%;
+    transition: 1s;
+}
+
+#tablet-menu:hover{
+    transform: rotate(10deg) scale(1.2);
+    filter: drop-shadow(0px 0px 26px rgba(255,255,255,0.8));
+    transition: 1s;
 }
 
 .mode-menu li a{

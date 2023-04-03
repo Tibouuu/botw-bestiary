@@ -17,7 +17,6 @@ function MenuTab(){
           <ul className='mode-menu'>
             <li><Link to="/MonsterGroup/"><p>Liste des monstres</p></Link></li>
             <li><Link to="/Map"><p>Carte interactive</p></Link></li>
-            <li><Link to="/"><p>Filtrer</p></Link></li>
             <li><Link to="/Add"><p>Ajouter</p></Link></li>
           </ul>
         </div>

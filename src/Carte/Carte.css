@@ -1,15 +1,120 @@
 .map{
     position: relative;
+    text-align: center;
 }
 
-.map img{
-    width: 100%;
-    height: 100%;
+.map > img{
+    width: 80%;
+    height: auto;
+    margin: 3em;
+    border-radius: 30px;
+    
 }
 
-.map p{
+.map > p{
     position: absolute;
     color: white;
+    cursor: pointer;
+}
+
+#zone1{
+    top: 600px;
+    left: 670px;
+}
+
+#zone2{
+    top: 490px;
+    left: 670px;
+}
+
+#zone3{
+    top: 700px;
+    left: 850px;
+}
+
+#zone4{
+    top: 850px;
+    left: 300px;
+}
+
+#zone5{
+    top: 680px;
+    left: 330px;
+}
+
+#zone6{
+    top: 800px;
+    left: 950px;
+}
+
+#zone7{
+    top: 250px;
+    left: 1100px;
+}
+
+#zone8{
+    top: 350px;
+    left: 900px;
+}
+
+#zone9{
+    top: 530px;
+    left: 950px;
+}
+
+#zone11{
+    top: 270px;
+    left: 300px;
+}
+
+#zone12{
+    top: 490px;
+    left: 500px;
+}
+
+#zone13{
+    top: 430px;
+    left: 350px;
+}
+
+#zone14{
+    top: 300px;
+    left: 700px;
+}
+
+#zone15{
+    top: 60px;
+    left: 160px;
+}
+
+#zone21{
+    top: 60px;
+    left: 350px;
+}
+
+#zone16{
+    top: 250px;
+    left: 920px;
+}
+
+#zone17{
+    top: 350px;
+    left: 350px;
+}
+
+#zone18{
+    top: 300px;
+    left: 960px;
+}
+
+#zone19{
+    top: 500px;
+    left: 1050px;
+}
+
+#zone20{
+    top: 830px;
+    left: 400px;
 }
 
 .zones{
@@ -18,9 +123,40 @@
 
 .open-zone{
     display: block !important;
+    position: fixed;
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    top: 50%;
+    width: 90%;
+    height: 100%;
+    left: 50%;
+    margin-left: -45%;
 }
 
-.open-zone p{
-    color: red;
+.zones h1{
+    font-weight: bolder;
+}
+
+.zones img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 1em;
+    border-radius: 20px;
+}
+
+.monsterzone{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.monsterzone a{
+    text-decoration: none;
+}
+
+.monsterzone div p{
+    color: white;
+    
 }
 
