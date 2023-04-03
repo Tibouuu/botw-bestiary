@@ -56,16 +56,16 @@ export default function MonstersGroup() {
         <Container className="listmonster">
             <input name="filtre" type="text" value={filter} placeholder={"Rechercher un monstre par " + selectedFilter}  onChange={handleFilterChange} />
             <form  className="radios">
-                <input type="radio" id="name" name="filtreSelect" value="name" checked={selectedFilter==="name"} onChange={handleSelectedFilterChange} />
-                <label for="name">Nom</label>
-                <input type="radio" id="color" name="filtreSelect" value="color" checked={selectedFilter==="color"} onChange={handleSelectedFilterChange} />
-                <label for="color">Couleur</label>
-                <input type="radio" id="species" name="filtreSelect" value="species" checked={selectedFilter==="species"} onChange={handleSelectedFilterChange} />
-                <label for="species">Espèce</label>
-                <input type="radio" id="loots" name="filtreSelect" value="loots" checked={selectedFilter==="loots"} onChange={handleSelectedFilterChange}/>
-                <label for="loots">Loot</label>
-                <input type="radio" id="biome" name="filtreSelect" value="biome" checked={selectedFilter==="biome"} onChange={handleSelectedFilterChange} />
-                <label for="biome">Biome</label><br/>
+                <div className="bouton"><input type="radio" id="name" name="filtreSelect" value="name" checked={selectedFilter==="name"} onChange={handleSelectedFilterChange} />
+                <label for="name">Nom</label></div>
+                <div className="bouton"><input type="radio" id="color" name="filtreSelect" value="color" checked={selectedFilter==="color"} onChange={handleSelectedFilterChange} />
+                <label for="color">Couleur</label></div>
+                <div className="bouton"><input type="radio" id="species" name="filtreSelect" value="species" checked={selectedFilter==="species"} onChange={handleSelectedFilterChange} />
+                <label for="species">Espèce</label></div>
+                <div className="bouton"><input type="radio" id="loots" name="filtreSelect" value="loots" checked={selectedFilter==="loots"} onChange={handleSelectedFilterChange}/>
+                <label for="loots">Loot</label></div>
+                <div className="bouton"><input type="radio" id="biome" name="filtreSelect" value="biome" checked={selectedFilter==="biome"} onChange={handleSelectedFilterChange} />
+                <label for="biome">Biome</label></div><br/>
             </form>
             <ul>
                 {filtered.map(x => <>
