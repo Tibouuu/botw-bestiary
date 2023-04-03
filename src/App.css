@@ -19,6 +19,7 @@ header{
   background-color: rgba(85, 79, 76, 0.3);
   backdrop-filter: blur(10px);
   justify-content: space-around;
+  margin-bottom: 5rem;
 }
 
 header img{

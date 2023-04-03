@@ -1,0 +1,81 @@
+.postArticle form{
+    display: flex;
+    flex-direction: column;
+    max-width:1000px;
+    margin:auto;
+    background-color:rgba(255, 255, 255, 0.151);
+    backdrop-filter: blur(20px);
+    box-shadow:  2px 1px 24px 0px rgba(0, 0, 0, 0.5);
+    padding:2em;
+    border-radius: 32px;
+}
+
+.postArticle form input, .postArticle form textarea{
+    background-color:rgba(255, 255, 255, 0.281);
+    backdrop-filter: blur(1000px);
+    border:none;
+    padding:1em;
+    border-radius: 32px;
+    margin-bottom: 1rem;
+}
+
+.postArticle .part1{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+}
+
+.postArticle .right, .postArticle .left{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.postArticle .desc{
+    width:50%;
+    padding-bottom: 4em;
+    padding-right: 2em;
+}
+
+.postArticle .desc textarea{
+    height: 100%;
+    width:100%;
+    padding-bottom: 1em;
+}
+
+.postArticle .bouton:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+
+.postArticle .bouton{
+    transition: 0.5s;
+}
+
+.postArticle label{
+    font-size: 2em;
+    font-variant: small-caps;
+    font-weight: 500;
+    color:#f6edb2;
+}
+
+.boutonValide{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.postArticle .bouton{
+ padding: 1em;
+ font-size: 2em;
+ font-variant: small-caps;
+ font-weight: 900;
+ color:#f6edb2;
+}
+
+.postArticle h1{
+    font-size: 3em;
+    font-variant: small-caps;
+    font-weight: 800;
+    color:#f6edb2;
+}
