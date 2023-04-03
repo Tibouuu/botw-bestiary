@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Monster from "./Monster";
+import Monster from "../Monster/Monster";
 import { Container } from "react-bootstrap"
 import "./MonsterGroup.css";
 import { Route, Link, Routes } from "react-router-dom";
 
 export default function MonstersGroup() {
+    var test = document.getElementById("nomenu")
+    test?.classList.remove("no-menu")
     const [results, setResults] = useState([]);
     const [filter, setFilter] = useState("");
     let filtered = results.filter(c => c.name.toUpperCase().includes(filter.toUpperCase()));
@@ -28,6 +30,7 @@ export default function MonstersGroup() {
         setFilter(e.target.value)
     }
     return (
+        <>
         <Container className="listmonster">
             <input name="filtre" type="text" value={filter} placeholder="Rechercher un monstre..." onChange={handleFilterChange} />
             <ul>
@@ -40,5 +43,6 @@ export default function MonstersGroup() {
                 )}
             </ul>
         </Container>
+        </>
     )
 }

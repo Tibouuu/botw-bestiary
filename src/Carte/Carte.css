@@ -1,0 +1,26 @@
+.map{
+    position: relative;
+}
+
+.map img{
+    width: 100%;
+    height: 100%;
+}
+
+.map p{
+    position: absolute;
+    color: white;
+}
+
+.zones{
+    display: none;
+}
+
+.open-zone{
+    display: block !important;
+}
+
+.open-zone p{
+    color: red;
+}
+
