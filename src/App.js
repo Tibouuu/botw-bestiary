@@ -8,8 +8,7 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [results, setResults] = useState([]);
-  let tablette = document.getElementById('tablet')
-  let menu = document.getElementById('InTablet')
+
 
   async function getMonsters() {
     try {
@@ -26,11 +25,15 @@ function App() {
   }, []);
 
   function openmenu() {
+    let tablette = document.getElementById('tablet')
+    let menu = document.getElementById('InTablet')
     tablette.classList.add("ouvert")
     menu.classList.add("menu-open")
   }
 
   function closemenu() {
+    let tablette = document.getElementById('tablet')
+    let menu = document.getElementById('InTablet')
     tablette.classList.remove("ouvert")
     menu.classList.remove('menu-open')
   }
