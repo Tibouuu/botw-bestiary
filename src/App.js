@@ -29,8 +29,12 @@ function App() {
     })();
   }, []);
 
-  
- 
+  function closemenu() {
+    let tablette = document.getElementById('tablet')
+    let menu = document.getElementById('InTablet')
+    tablette.classList.remove("ouvert")
+    menu.classList.remove('menu-open')
+  }
 
   return (
     <>

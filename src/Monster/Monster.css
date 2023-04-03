@@ -14,6 +14,8 @@
 
 .card-img-top{
     float: left;
+    backdrop-filter: blur(1000px);
+    background-color: rgba(255, 255, 255, 0.384);
     border-radius: 20px;
     height: 280px;
     aspect-ratio: 1/1;
